@@ -53,10 +53,10 @@ export default function App() {
   if (queryusers.isLoading) return <h1>loading...</h1>;
   if (queryusers.isError) return <h1>error...</h1>;
 
-  const filtered =
-    Categories === "all"
-      ? queryusers.data
-      : queryusers.data.filter((item) => item.category === Categories);
+   const filtered =
+     Categories === "all"
+       ? queryusers.data
+       : queryusers.data.filter((item) => item.category === Categories);
 
   return (
     <div>
@@ -69,7 +69,7 @@ export default function App() {
         <option value="all">all</option>
         <option value="study materials">study materials</option>
         <option value="clothes">clothes</option>
-      </select>
+      </select> 
 
 
       
