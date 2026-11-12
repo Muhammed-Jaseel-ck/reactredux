@@ -1,26 +1,41 @@
 {
   "product": [
-
-    { "id": 1,
-     "name": "notebook",
+    {
+      "id": "1",
+      "name": "notebook",
       "price": 199,
-       "category": "study materials" 
+      "category": "study materials"
     },
-    { "id": 2,
-     "name": "pen",
+    {
+      "id": "2",
+      "name": "pen",
       "price": 20,
-       "category": "study materials"
-     },
-    { "id": 3,
-     "name": "pencil",
-      "price": 10,
-       "category": "study materials" 
+      "category": "study materials"
     },
-
-    { "id": 4,
-     "name": "color",
+    {
+      "id": "3",
+      "name": "pencil",
+      "price": 10,
+      "category": "study materials"
+    },
+    {
+      "id": "4",
+      "name": "color",
       "price": 100,
-       "category": "study materials"
-     }
-  ]
+      "category": "study materials"
+    },
+    {
+      "name": "bnm",
+      "price": "nm,",
+      "category": "study materials",
+      "id": "Ag5UZTWu1fU"
+    },
+    {
+      "name": "jk",
+      "price": "j",
+      "category": "kiloooo",
+      "id": "b8RrPFpLvCU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

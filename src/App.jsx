@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useSelector, useDispatch } from "react-redux";
-import { allcategory, toggleForm, closeForm } from "./features/uiSlice";
+import { allcategory, closeForm } from "./features/uiSlice";
 import axios from "axios";
 import { useState } from "react";
 
@@ -9,7 +9,7 @@ export default function App() {
   const queryclient = useQueryClient();
 
   const Categories = useSelector((state) => state.ui.Categories);
-  const showForm = useSelector((state) => state.ui.showForm);
+ 
 
   const [name, setname] = useState("");
   const [price, setprice] = useState("");
@@ -71,18 +71,15 @@ export default function App() {
         <option value="clothes">clothes</option>
       </select>
 
-      <button onClick={() => dispatch(toggleForm())}>
-        {showForm ? "hide" : "add product"}
-      </button>
 
-      {showForm && (
+      
         <div>
           <input placeholder="name" value={name} onChange={(e) => setname(e.target.value)} />
           <input placeholder="price" value={price} onChange={(e) => setprice(e.target.value)} />
           <input placeholder="category" value={category} onChange={(e) => setcategory(e.target.value)} />
           <button onClick={add}>add</button>
         </div>
-      )}
+      
 
       <ul>
         {filtered.map((item) => (

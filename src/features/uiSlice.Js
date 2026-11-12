@@ -10,14 +10,12 @@ const uiSlice = createSlice({
     allcategory: (state, action) => {
       state.Categories = action.payload;
     },
-    toggleForm: (state) => {
-      state.showForm = !state.showForm;
-    },
+    
     closeForm: (state) => {
       state.showForm = false;
     },
   },
 });
 
-export const { allcategory, toggleForm, closeForm } = uiSlice.actions;
+export const { allcategory, closeForm } = uiSlice.actions;
 export default uiSlice.reducer;
