@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const uiSlice = createSlice({
   name: "ui",
   initialState: {
-    Categories: "all",
+  Categories: "all",
     showForm: false,
   },
   reducers: {
@@ -17,5 +17,5 @@ const uiSlice = createSlice({
   },
 });
 
-export const { allcategory, closeForm } = uiSlice.actions;
+export const{allcategory,closeForm}=uiSlice.actions;
 export default uiSlice.reducer;
